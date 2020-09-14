@@ -11,3 +11,11 @@
 .keytab-contents .keytab.active {
   display: block;
 }
+
+.bg-info {
+  background-color: #DCEDFC;
+}
+
+.bg-warning {
+  background-color: #FFF4CF;;
+}
