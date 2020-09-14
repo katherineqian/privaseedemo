@@ -9,9 +9,9 @@ app = Flask(__name__)
 def home():
     return "Hello, World!"  # return a string
 
-@app.route('/welcome')
+@app.route('/landing')
 def welcome():
-    return render_template('welcome.html')  # render a template
+    return render_template('landing.html')  # render a template
 
 # start the server with the 'run()' method
 if __name__ == '__main__':
