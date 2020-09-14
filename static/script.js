@@ -1,12 +1,3 @@
-/* $(document).ready(function() {
-  $(".list-group-item").on('click', function(){
-    $('.active').removeClass('active');
-    $(this).addClass('active');
-    console.log($(this).html());
-    // Code here whatever you want or you can call other function here
-  });
-}); */
-
 // jQuery version
 $(document).ready(function() {
   $(".list-group-item").on('click', function(e){
@@ -14,7 +5,10 @@ $(document).ready(function() {
     e.preventDefault();
     // Select our target
     var target = $(this).attr('data-target');
-    console.log("WTDF????");
+
+    // make the list active
+    $('.active').removeClass('active');
+    $(this).addClass('active');
 
     // Hide all tabs
     $('.tab-contents .tab').removeClass('active');
@@ -22,9 +16,6 @@ $(document).ready(function() {
 
     $(target).addClass('active');
 
-    //$('.active').removeClass('active');
-    //$(this).addClass('active');
-    console.log($(this).html());
-    // Code here whatever you want or you can call other function here
+    //console.log($(this).html());
   });
 });
