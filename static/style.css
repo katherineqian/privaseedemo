@@ -4,3 +4,10 @@
 .tab-contents .tab.active {
   display: block;
 }
+
+.keytab-contents .keytab {
+  display: none;
+}
+.keytab-contents .keytab.active {
+  display: block;
+}
