@@ -11,13 +11,12 @@
 $('body').on('click', '[data-toggle="tab"]', function(e) {
   e.preventDefault();
   // Select our target
-  var target = '.'+$(this).attr('data-target');
-  console.log(target);
+  var target = $(this).attr('data-target');
+  console.log("WTDF????");
 
   // Hide all tabs
   $('.tab-contents .tab').removeClass('active');
   $('.keytab-contents .keytab').removeClass('active');
 
-  $('.tab-contents .tab '+target).addClass('active');
-  $('.keytab-contents .keytab '+target).addClass('active');
+  $(target).addClass('active');
 });
