@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $(".list-group-item").live('click', function(){
+  $(".list-group-item").on('click', function(){
     $('.active').removeClass('active');
     $(this).addClass('active');
     console.log($(this).html());
