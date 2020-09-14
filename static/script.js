@@ -11,16 +11,13 @@
 $('body').on('click', '[data-toggle="tab"]', function(e) {
   e.preventDefault();
   // Select our target
-  var target = $(this).attr('data-target');
+  var target = '.'+$(this).attr('data-target');
   console.log(target);
 
   // Hide all tabs
   $('.tab-contents .tab').removeClass('active');
   $('.keytab-contents .keytab').removeClass('active');
 
-  // Show only $target tab
-  $target.each(function(i){
-            $(this).addClass('active'); // $(this), not the id element
-        });
-  //$target.addClass('active');
+  $('.tab-contents .tab '+target).addClass('active');
+  $('.keytab-contents .keytab '+target).addClass('active');
 });
