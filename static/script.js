@@ -16,6 +16,7 @@ $('body').on('click', '[data-toggle="tab"]', function(e) {
 
   // Hide all tabs
   $('.tab-contents .tab').removeClass('active');
+  $('.keytab-contents .keytab').removeClass('active');
 
   // Show only $target tab
   $target.each(function(i){
