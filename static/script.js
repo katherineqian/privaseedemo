@@ -11,14 +11,14 @@
 $('body').on('click', '[data-toggle="tab"]', function(e) {
   e.preventDefault();
   // Select our target
-  var target = $(this).data('target');
+  var $target = $($(this).data('target'));
   console.log(target);
 
   // Hide all tabs
   $('.tab-contents .tab').removeClass('active');
 
   // Show only $target tab
-  $(target).each(function(i){
+  $target.each(function(i){
             $(this).addClass('active'); // $(this), not the id element
         });
   //$target.addClass('active');

@@ -12,10 +12,10 @@
   display: block;
 }
 
-.bg-info {
+.bg-similar {
   background-color: #DCEDFC;
 }
 
-.bg-warning {
+.bg-different {
   background-color: #FFF4CF;;
 }
