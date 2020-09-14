@@ -8,15 +8,23 @@
 }); */
 
 // jQuery version
-$('body').on('click', '[data-toggle="tab"]', function(e) {
-  e.preventDefault();
-  // Select our target
-  var target = $(this).attr('data-target');
-  console.log("WTDF????");
+$(document).ready(function() {
+  $(".list-group-item").on('click', function(e){
 
-  // Hide all tabs
-  $('.tab-contents .tab').removeClass('active');
-  $('.keytab-contents .keytab').removeClass('active');
+    e.preventDefault();
+    // Select our target
+    var target = $(this).attr('data-target');
+    console.log("WTDF????");
 
-  $(target).addClass('active');
+    // Hide all tabs
+    $('.tab-contents .tab').removeClass('active');
+    $('.keytab-contents .keytab').removeClass('active');
+
+    $(target).addClass('active');
+
+    //$('.active').removeClass('active');
+    //$(this).addClass('active');
+    console.log($(this).html());
+    // Code here whatever you want or you can call other function here
+  });
 });
