@@ -11,7 +11,7 @@
 $('body').on('click', '[data-toggle="tab"]', function(e) {
   e.preventDefault();
   // Select our target
-  var target = $(this).attr('target');
+  var target = $(this).attr('data-target');
   console.log(target);
 
   // Hide all tabs
