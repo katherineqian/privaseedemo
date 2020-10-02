@@ -1,0 +1,25 @@
+.tab-contents .tab {
+  display: none;
+}
+.tab-contents .tab.active {
+  display: block;
+}
+
+.keytab-contents .keytab {
+  display: none;
+}
+.keytab-contents .keytab.active {
+  display: block;
+}
+
+.bg-similar {
+  background-color: #DCEDFC;
+}
+
+.bg-different {
+  background-color: #FFF4CF;;
+}
+
+.keytab ul {
+  padding-left: 20px;
+}
