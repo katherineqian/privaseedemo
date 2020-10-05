@@ -20,6 +20,10 @@ $(document).ready(function() {
   });
 });
 
+function keywordToggle() {
+  $("b").toggleClass("hidden");
+}
+
 $(function () {
     $("#switch-id").change(function () {
         if ($(this).is(":checked")) {

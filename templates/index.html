@@ -1,11 +1,81 @@
 {% extends "base.html" %}
 
 {% block content %}
-<p> hi </p>
-<a href="{{url_for('policy', q="archives1")}}"> archives.gov 1% or less</a> <br>
-<a href="{{url_for('policy', q="archives6")}}"> archives.gov 6% or less</a> <br>
-<a href="{{url_for('policy', q="dailynews1")}}"> dailynews.com 1% or less</a> <br>
-<a href="{{url_for('policy', q="dailynews6")}}"> dailynews.com 6% or less</a> <br> 
+<table><tr><td></td>
+  <td> <b> Overall Similarity </b> </td>
+  <td>First Party Collection/Use</td>
+  <td>Third Party Sharing/Collection</td>
+  <td>User Choice/Control</td>
+  <td>User Access, Edit and Deletion</td>
+  <td>Data Retention</td>
+  <td>Data Security</td>
+  <td>Policy Change</td>
+  <td>Do Not Track</td>
+  <td>International and Specific Audiences</td>
+  <td>Other</td></tr>
 
+  <tr><td><a href="{{url_for('policy', q="archives")}}"> archives.gov </a></td>
+    <td class="lowdark"> 0.1798 </td>
+    <td>0.665</td><td>0.671</td><td class="low">0.000</td><td class="low">0.000</td><td class="high">0.738</td><td class="high">0.816</td><td class="low">0.000</td><td class="low">0.000</td><td class="low">0.000</td><td class="high">0.791</td></tr>
+
+  <tr><td><a href="{{url_for('policy', q="kaleida")}}"> kaleidahealth.org </a></td>
+    <td class="lowdark"> 0.3552 </td>
+    <td class="low">0.446</td><td>0.652</td><td class="low">0.591</td><td>0.697</td><td class="low">0.000</td><td>0.621</td><td class="high">0.755</td><td class="low">0.000</td><td class="low">0.000</td><td class="low">0.464</td></tr>
+
+  <tr><td><a href="{{url_for('policy', q="tangeroutlet")}}"> tangeroutlet.com </a></td>
+    <td class="highdark"> 0.7294 </td>
+    <td class="low">0.569</td><td class="low">0.000</td><td>0.628</td><td class="low">0.000</td><td class="low">0.000</td><td class="low">0.000</td><td class="low">0.000</td><td class="low">0.000</td><td class="low">0.000</td><td class="low">0.579</td></tr>
+
+  <tr><td><a href="{{url_for('policy', q="dailynews")}}"> dailynews.com </a></td>
+    <td class="highdark"> 0.7973 </td>
+    <td class="high">0.710</td><td class="high">0.752</td><td class="high">0.724</td><td>0.672</td><td class="low">0.000</td><td>0.654</td><td class="high">0.742</td><td class="high">0.787</td><td class="high">0.892</td><td>0.686</td></tr>
+
+  <tr><td><a href="{{url_for('policy', q="sltrib")}}"> sltrib.com </a></td>
+    <td class="highdark"> 0.7876 </td>
+    <td class="high">0.739</td><td class="high">0.759</td><td class="high">0.708</td><td>0.672</td><td class="low">0.000</td><td>0.681</td><td class="high">0.731</td><td class="low">0.000</td><td class="high">0.886</td><td>0.658</td></tr>
+
+  <tr><td><a href="{{url_for('policy', q="google")}}"> google.com </a></td>
+    <td class="lowdark"> 0.5066 </td>
+    <td>0.675</td><td class="high">0.783</td><td>0.650</td><td>0.654</td><td>0.666</td><td class="high">0.702</td><td class="high">0.701</td><td class="low">0.000</td><td class="low">0.000</td><td class="high">0.747</td></tr>
+
+  <tr><td><a href="{{url_for('policy', q="amazon")}}"> amazon.com </a></td>
+    <td> 0.6399 </td>
+    <td>0.683</td><td class="high">0.797</td><td class="high">0.751</td><td class="high">0.721</td><td>0.633</td><td class="high">0.784</td><td class="high">0.786</td><td class="low">0.000</td><td class="high">0.707</td><td class="high">0.710</td></tr>
+
+  <tr><td><a href="{{url_for('policy', q="reddit")}}"> reddit.com </a></td>
+    <td class="lowdark"> 0.4660 </td>
+    <td>0.640</td><td class="high">0.764</td><td>0.639</td><td>0.636</td><td class="high">0.835</td><td class="high">0.731</td><td class="high">0.717</td><td class="high">0.781</td><td class="high">0.809</td><td class="high">0.733</td></tr>
+
+  <tr><td><a href="{{url_for('policy', q="bankofamerica")}}"> bankofamerica.com </a></td>
+    <td class="lowdark"> 0.3962 </td>
+    <td>0.646</td><td>0.674</td><td>0.686</td><td class="low">0.000</td><td class="low">0.000</td><td>0.672</td><td class="high">0.745</td><td class="low">0.000</td><td class="high">0.748</td><td class="high">0.816</td></tr>
+
+  <tr><td><a href="{{url_for('policy', q="steam")}}"> steampowered.com </a></td>
+    <td class="lowdark"> 0.4953 </td>
+    <td>0.653</td><td class="high">0.713</td><td>0.661</td><td>0.665</td><td class="low">0.000</td><td class="low">0.000</td><td class="high">0.744</td><td class="low">0.000</td><td class="high">0.762</td><td>0.690</td></tr>
+
+  <tr><td><a href="{{url_for('policy', q="instagram")}}"> instagram.com </a></td>
+    <td class="lowdark"> 0.5038 </td>
+    <td>0.650</td><td class="high">0.858</td><td>0.602</td><td class="low">0.000</td><td>0.632</td><td class="high">0.710</td><td class="high">0.728</td><td class="low">0.000</td><td class="high">0.782</td><td class="high">0.828</td></tr>
+
+  <tr><td><a href="{{url_for('policy', q="nytimes")}}"> nytimes.com </a></td>
+    <td> 0.6749 </td>
+    <td class="high">0.739</td><td class="high">0.873</td><td>0.695</td><td>0.673</td><td class="low">0.550</td><td class="high">0.734</td><td>0.684</td><td class="low">0.000</td><td class="high">0.769</td><td class="high">0.789</td></tr></table>
+
+<!--<a href="{{url_for('policy', q="archives")}}"> archives.gov </a> <br>
+<a href="{{url_for('policy', q="kaleidahealth")}}"> kaleidahealth.org </a> <br>
+<a href="{{url_for('policy', q="tangeroutlet")}}"> tangeroutlet.com </a> <br>
+<a href="{{url_for('policy', q="dailynews")}}"> dailynews.com </a> <br>
+<a href="{{url_for('policy', q="sltrib")}}"> sltrib.com </a> <br>
+<a href="{{url_for('policy', q="google")}}"> google.com </a> <br>
+<a href="{{url_for('policy', q="amazon")}}"> amazon.com </a> <br>
+<a href="{{url_for('policy', q="reddit")}}"> reddit.com </a> <br>
+<a href="{{url_for('policy', q="bankofamerica")}}"> bankofamerica.com </a> <br>
+<a href="{{url_for('policy', q="steam")}}"> steampowered.com </a> <br>
+<a href="{{url_for('policy', q="instagram")}}"> instagram.com </a> <br>
+<a href="{{url_for('policy', q="nytimes")}}"> nytimes.com </a> <br>
+
+<br>
+<a href="{{url_for('policy', q="test")}}"> test catchall </a> <br>-->
 
 {% endblock %}

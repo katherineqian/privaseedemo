@@ -9,18 +9,49 @@ td {
     padding: 5px;
 }
 
-strong {
-  color: #ffbe00;
+a {
+  font-size: 14px;
+}
+/* Global view colouring */
+.lowdark {
+  background-color: #ffbe00;
+
+}
+.highdark {
+  background-color: #6498f2;
+}
+.low{
+  background-color: #FFF4CF;
+}
+.high{
+  background-color: #DCEDFD;
+}
+
+/* Bottom X% of sentences keywords */
+.bottomword {
+  color: #ffa100;
+  /*font-weight: normal;*/
+}
+
+/* TFIDF keywords */
+.keyword {
+  color: #263238;
   font-size: 16px;
 }
 
-em {
-  color: #6498f1;
-  font-weight: bold;
+.overlap {
+  color: #FF6F00;
   font-size: 16px;
-  font-style: normal;
 }
 
+.hidden {
+  color: black;
+  font-size: 12px;
+  font-weight:normal;
+}
+
+
+/* Toggle switch styling */
 .switch {
    font-size: 1rem;
    position: relative;
@@ -73,9 +104,14 @@ em {
    background-color: white;
    transition: 0.2s all;
 }
- .switch input:checked + label::before {
-   background-color: #08d;
+ #hello input:checked + label::before {
+   background-color: #FF6F00;
 }
+
+.switch input:checked + label::before {
+  background-color: #08d;
+}
+
  .switch input:checked + label::after {
    margin-left: calc(2.375rem * .8);
 }
