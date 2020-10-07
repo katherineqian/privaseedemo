@@ -26,6 +26,9 @@ a {
 .high{
   background-color: #DCEDFD;
 }
+.none{
+  background-color: #dddddd;
+}
 
 /* Bottom X% of sentences keywords */
 .bottomword {
